@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Error - Page Not Found</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1a1a1a, #333);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 8rem;
+      margin: 0;
+      background: linear-gradient(90deg, #ff6a00, #ff0084);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulse 2s infinite alternate;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 10px;
+      color: #ddd;
+      animation: slideUp 1.5s ease-in-out;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #aaa;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      background: #ff6a00;
+      color: white;
+      border-radius: 30px;
+      transition: 0.3s;
+      animation: bounce 2s infinite;
+    }
+
+    a:hover {
+      background: #ff0084;
+      transform: scale(1.1);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1;
