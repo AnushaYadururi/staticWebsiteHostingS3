@@ -13,9 +13,9 @@ pipeline {
         stage('checkout') {
             steps {
                  script{
-                        dir("terraform")
-                        {
-                            git "https://github.com/AnushaYadururi/staticWebsiteHostingS3.git"
+                       dir("terraform") {
+                          git branch: 'main',
+                          url: 'https://github.com/AnushaYadururi/staticWebsiteHostingS3.git'
                         }
                     }
                 }
